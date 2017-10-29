@@ -23,7 +23,7 @@ public class ClassMailer {
 	
 	public static void sendEmail(){
 		final String username = "armandorp10@gmail.com";
-		final String password = "Armandoramos";
+		final String password = "password";
 
 		Properties props = new Properties();
 		props.put("mail.smtp.auth", "true");
@@ -45,7 +45,7 @@ public class ClassMailer {
 			message.setRecipients(Message.RecipientType.TO,
 				InternetAddress.parse("armandor-10@hotmail.com"));
 			message.setSubject("Testing Subject");
-			message.setText("El impuesto es mayor de $2’000 000.,"
+			message.setText("El impuesto es mayor de $2â€™000 000.,"
 				+ "\n\n No spam to my email, please!");
 
 			Transport.send(message);
